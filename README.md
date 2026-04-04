@@ -2,15 +2,6 @@
 
 <br />
 
-```
-  ██████╗██████╗ ████████╗██╗  ██╗██████╗ ███████╗███████╗
- ██╔════╝╚════██╗╚══██╔══╝██║  ██║██╔══██╗██╔════╝██╔════╝
- ██║      █████╔╝   ██║   ███████║██████╔╝█████╗  █████╗  
- ██║     ██╔═══╝    ██║   ██╔══██║██╔══██╗██╔══╝  ██╔══╝  
- ╚██████╗███████╗   ██║   ██║  ██║██║  ██║███████╗███████╗
-  ╚═════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝
-```
-
 ### **CT Scans to 3D.**
 
 *Convert flat CT slices to interactive adanatomy in a click.*
@@ -54,7 +45,7 @@ The most critical metadata CT scan includes are - PixelSpacing and SliceThicknes
 **Conversational Interface**
 Ask questions about your scan in plain language. Get context-aware responses grounded in the 3D model currently on screen.
 
-**Connect with a Real Doctor**
+**Expert Advice**
 AI findings can be sent directly to verified specialist physicians who review the results, validate findings, and provide professional medical advice.
 ---
 
