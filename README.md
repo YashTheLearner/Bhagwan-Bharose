@@ -48,6 +48,8 @@ Ask questions about your scan in plain language. Get context-aware responses gro
 
 **Expert Advice**
 AI findings can be sent directly to verified specialist physicians who review the results, validate findings, and provide professional medical advice.
+
+
 ---
 
 ## Why It's Different
