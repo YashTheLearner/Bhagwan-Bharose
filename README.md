@@ -103,6 +103,50 @@ The result is a model where a hairline rib fracture — invisible in a single 2D
 
 ---
 
+### Option B — Windows (Manual, No WSL)
+
+#### Backend
+```powershell
+cd backend
+
+# Create virtualenv
+python -m venv venv
+venv\Scripts\Activate.ps1
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Generate atlas (one-time, ~30 seconds)
+python -m app.atlas.generate_atlas --size 128 --output atlas_chest_128.npz --output-dir ../data
+
+# Build medical knowledge base (one-time, ~5 seconds)
+python -m app.knowledge.build_kb --output ../data/medical_kb.sqlite
+
+# Generate memory bank for anomaly detector (one-time, ~60 seconds)
+python scripts\download_weights.py --output-dir ../models --atlas ../data/atlas_chest_128.npz
+
+# Start backend
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+#### Frontend (new terminal)
+```powershell
+cd frontend
+
+# Install dependencies
+npm install
+
+# Add zustand (needed for appStore.js)
+npm install zustand
+
+# Start dev server
+npm run dev
+# → http://localhost:5173
+```
+
+---
+
+
 <div align="center">
 <br />
 
